@@ -1,0 +1,27 @@
+dateModified: 1679199361
+email:
+  fromEmail: info@stewardhospitalgh.org
+  fromName: 'St. Edward Hospital, Dwinyama'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    7eb80008-e9ae-442d-990e-2c8d122476cd: 'St. Edward Hospital, Dwinyama' # St. Edward Hospital, Dwinyama
+    98732b45-a75a-4682-b38f-68211a86d58e: Common # Common
+    61374186-d744-4e86-8921-df9aed4a3a13: 'St. Edward Hospital, Dwinyama' # St. Edward Hospital, Dwinyama
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'St. Edward Hospital, Dwinyama'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
