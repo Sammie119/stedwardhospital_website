@@ -1,191 +1,251 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <title>Welcome to Craft CMS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
-    <style>
-        html,
-        body {
-            font-size: 16px;
-            -webkit-text-size-adjust: 100%;
-            height: 100%;
-            font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        }
+{% extends "_layout/app" %}
 
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: hsl(212, 60%, 97%);
-            color: hsl(209, 18%, 30%);
-            display: flex;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
-        h2 {
-            margin-top: 24px;
-            font-size: 1em;
-        }
-
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        p {
-            line-height: 1.4em;
-            margin-bottom: 1.4em;
-        }
-
-        ul {
-            line-height: 1.3em;
-            padding-left: 20px;
-            margin-bottom: 0;
-        }
-
-        ul li {
-            margin-bottom: 0.35em;
-        }
-
-        a {
-            color: #0B69A3;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .go {
-            color: #0B69A3;
-        }
-
-        .go:after {
-            padding-left: 4px;
-            content: '→';
-            text-decoration: none !important;
-        }
-
-        small {
-            color: hsl(211, 11%, 59%);
-        }
-
-        code {
-            display: inline-block;
-            color: #EF4E4E;
-            padding: 0 2px;
-            background: hsl(212, 60%, 97%);
-            border-radius: 3px;
-            line-height: 1.3;
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-            font-size: 0.9em;
-        }
-
-        #container {
-            flex-grow: 1;
-        }
-
-        #modal {
-            background: #fff;
-        }
-
-        #aside {
-            background: hsl(212, 60%, 97%);
-        }
-
-        .content {
-            padding: 35px;
-            padding-left: calc(35px + env(safe-area-inset-left));
-            padding-right: calc(35px + env(safe-area-inset-right));
-        }
-
-        @media (min-width:768px) {
-            #modal {
-                display: flex;
-            }
-
-            #main {
-                width: 50%;
-                overflow: auto;
-            }
-
-            #aside {
-                width: 50%;
-                overflow: auto;
-            }
-        }
-
-        @media (min-width:768px) and (min-height: 376px) {
-            body {
-                background-color: hsl(212, 50%, 93%);
-                background-image: url("{{ view.getAssetManager().getPublishedUrl('@app/web/assets/installer/dist', true, 'images/installer-bg.png') }}");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-            }
-
-            #container {
-                display: flex;
-                padding: 24px;
-                align-items: center;
-                justify-content: center;
-            }
-
-            #modal {
-                height: 100%;
-                max-width: 800px;
-                max-height: 525px;
-                border-radius: 4px;
-                overflow: auto;
-                box-shadow: 0 25px 100px rgba(0, 0, 0, 0.5);
-            }
-
-            #aside {
-                overflow: auto;
-            }
-        }
-
-    </style>
-</head>
-<body class="ltr">
-<div id="container">
-    <div id="modal">
-        <div id="main">
-            <div class="content">
-                <h1>Welcome</h1>
-                <p>Thanks for installing Craft CMS!</p>
-                <p>You’re looking at the <code>index.twig</code> template file located in your
-                    <code>templates/</code> folder. Once you’re ready to start building out your site’s
-                    front end, you can replace this with something custom.</p>
-                <p>If you’re new to Craft CMS, take some time to check out the resources on the right
-                    when you get a chance&mdash;especially
-                    <a href="https://craftcms.com/discord" target="_blank">Discord</a>
-                    and <a href="http://craftcms.stackexchange.com/" target="_blank">Stack Exchange</a>.
-                    The Craft community is full of smart, friendly, and helpful people!</p>
-                <p><span class="go"><a href="{{ cpUrl('') }}">Go to your control panel</a></span></p>
+{% block content %}
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                {% set carousel_1_image = entry.carousel_1.one() %}
+                <div class="carousel-item active">
+                    <img class="w-100" src="{{ carousel_1_image.getUrl('homeCarousel') }}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">{{ entry.carousel_1_Title }}</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">{{ entry.carousel_1_Text }}</h1>
+                            <a href="appointment" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
+                            <a href="contact" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    {% set carousel_2_image = entry.carousel_2.one() %}
+                    <img class="w-100" src="{{ carousel_2_image.getUrl('homeCarousel') }}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">{{ entry.carousel_2_Title }}</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">{{ entry.carousel_2_Text }}</h1>
+                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div id="aside">
-            <div class="content">
-                <h2>Popular Resources</h2>
-                <ul>
-                    <li><a href="https://craftcms.com/docs/getting-started-tutorial/" target="_blank">Tutorial</a><br><small>Learn the basics.</small></li>
-                    <li><a href="https://craftcms.com/docs/4.x/" target="_blank">Documentation</a><br><small>Read the official docs.</small></li>
-                    <li><a href="https://craftcms.com/guides" target="_blank">Knowledge Base</a><br><small>Find answers to common problems.</small></li>
-                    <li><a href="https://twitter.com/hashtag/craftcms" target="_blank">#craftcms</a><br><small>See the latest tweets about Craft.</small></li>
-                    <li><a href="https://craftcms.com/discord" target="_blank">Discord</a><br><small>Meet the community.</small></li>
-                    <li><a href="http://craftcms.stackexchange.com/" target="_blank">Stack Exchange</a><br><small>Get help and help others.</small></li>
-                    <li><a href="https://craftquest.io/" target="_blank">CraftQuest</a><br><small>Watch unlimited video lessons and courses.</small></li>
-                    <li><a href="http://craftlinklist.com/" target="_blank">Craft Link List</a><br><small>Stay in-the-know.</small></li>
-                    <li><a href="https://nystudio107.com/blog" target="_blank">nystudio107 Blog</a><br><small>Learn Craft and modern web development.</small></li>
-                </ul>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner mb-3">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="row gx-0">
+                    {% for banner in entry.banners.all() %}
+                        <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                            <div class="{{ banner.bgColor }} d-flex flex-column p-5" style="height: 300px;">
+                                <h3 class="text-white mb-3">{{ banner.bannertitle }}</h3>
+                                {{ banner.bannertext }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
-</div>
-</body>
-</html>
+    <!-- Banner Start -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                {% for homeAboutUs in entry.homeAboutUs.all() %}
+                    {% set homeImage = homeAboutUs.homeAboutImage.one() %}
+                    <div class="col-lg-7">
+                        <div class="section-title mb-4">
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
+                            <h1 class="display-5 mb-0">{{ homeAboutUs.homeAboutTitle }}</h1>
+                        </div>
+                        {{ homeAboutUs.homeAboutDescription }}
+
+                        <a href="appointment" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Make Appointment</a>
+                    </div>
+                    <div class="col-lg-5" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-70 rounded wow zoomIn" data-wow-delay="0.9s" src="{{ homeImage.getUrl('transformationForHomeAboutImage') }}" style="object-fit: cover;">
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Appointment Start -->
+{#    <div class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s" style="background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url({{ siteUrl }}web/img/carousel-1.jpg) center center no-repeat;">#}
+{#        <div class="container">#}
+{#            <div class="row gx-5">#}
+{#                <div class="col-lg-6 py-5">#}
+{#                    <div class="py-5">#}
+{#                        <h1 class="display-5 text-white mb-4">We Are A Certified and Award Winning Dental Clinic You Can Trust</h1>#}
+{#                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-6">#}
+{#                    <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">#}
+{#                        <h1 class="text-white mb-4">Make Appointment</h1>#}
+{#                        <form>#}
+{#                            <div class="row g-3">#}
+{#                                <div class="col-12 col-sm-6">#}
+{#                                    <select class="form-select bg-light border-0" style="height: 55px;">#}
+{#                                        <option selected>Select A Service</option>#}
+{#                                        <option value="1">Service 1</option>#}
+{#                                        <option value="2">Service 2</option>#}
+{#                                        <option value="3">Service 3</option>#}
+{#                                    </select>#}
+{#                                </div>#}
+{#                                <div class="col-12 col-sm-6">#}
+{#                                    <select class="form-select bg-light border-0" style="height: 55px;">#}
+{#                                        <option selected>Select Doctor</option>#}
+{#                                        <option value="1">Doctor 1</option>#}
+{#                                        <option value="2">Doctor 2</option>#}
+{#                                        <option value="3">Doctor 3</option>#}
+{#                                    </select>#}
+{#                                </div>#}
+{#                                <div class="col-12 col-sm-6">#}
+{#                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">#}
+{#                                </div>#}
+{#                                <div class="col-12 col-sm-6">#}
+{#                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">#}
+{#                                </div>#}
+{#                                <div class="col-12 col-sm-6">#}
+{#                                    <div class="date" id="date1" data-target-input="nearest">#}
+{#                                        <input type="text"#}
+{#                                            class="form-control bg-light border-0 datetimepicker-input"#}
+{#                                            placeholder="Appointment Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-12 col-sm-6">#}
+{#                                    <div class="time" id="time1" data-target-input="nearest">#}
+{#                                        <input type="text"#}
+{#                                            class="form-control bg-light border-0 datetimepicker-input"#}
+{#                                            placeholder="Appointment Time" data-target="#time1" data-toggle="datetimepicker" style="height: 55px;">#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-12">#}
+{#                                    <button class="btn btn-dark w-100 py-3" type="submit">Make Appointment</button>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </form>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+    <!-- Appointment End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 mb-2">
+                <div class="col-lg-12">
+                    <div class="section-title mb-5">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
+                        <h1 class="display-5 mb-0">{{ entry.service_title }}</h1>
+                    </div>
+                    <div class="row g-5">
+                        {% for homeService in entry.homeServices.all() %}
+                            {% set homeServImage = homeService.serviceImage.one() %}
+                            <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.6s">
+                                <div class="rounded-top overflow-hidden">
+                                    <img class="img-fluid" src="{{ homeServImage.getUrl('transformationForHomeServiceImage') }}" alt="">
+                                </div>
+                                <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                    <h5 class="m-0">{{ homeService.serviceImageDescrition }}</h5>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Offer Start -->
+{#    <div class="container-fluid bg-offer py-5 wow fadeInUp" data-wow-delay="0.1s" style="background:url({{ siteUrl }}web/img/carousel-1.jpg) center center no-repeat;">#}
+{#        <div class="container py-5">#}
+{#            <div class="row justify-content-center">#}
+{#                <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">#}
+{#                    <div class="offer-text text-center rounded p-5">#}
+{#                        <h1 class="display-5 text-white">Save 30% On Your First Dental Checkup</h1>#}
+{#                        <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod diam duo lorem magna sit dolore sed et.</p>#}
+{#                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Appointment</a>#}
+{#                        <a href="" class="btn btn-light py-3 px-5">Read More</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+    <!-- Offer End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="section-title mb-2">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Staff</h5>
+                        <h1 class="display-5 mb-0">{{ entry.staffSectionTitle }}</h1>
+                    </div>
+                </div>
+                {% for staff in entry.staffImage.all() %}
+                    {% set staffImage = staff.staff_image.one() %}
+                    <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="position-relative rounded-top" style="z-index: 1;">
+                                <img class="img-fluid rounded-top w-100" src="{{ staffImage.getUrl('staffImage') }}" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                    <a class="btn btn-primary btn-square m-1" href="{{ staff.staffTwitterHandle }}"><i class="fab fa-twitter fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square m-1" href="{{ staff.staffFacebookHandle }}"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square m-1" href="{{ staff.staffInstagramHandle }}"><i class="fab fa-instagram fw-normal"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                                <h4 class="mb-2">{{ staff.staffName }}</h4>
+                                <p class="text-primary mb-0">{{ staff.staffPosition }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-1"> </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+{% endblock %}
+
+

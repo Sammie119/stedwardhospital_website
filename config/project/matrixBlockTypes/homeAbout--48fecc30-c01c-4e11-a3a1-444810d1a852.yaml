@@ -1,0 +1,148 @@
+field: 5f7cf67e-fa17-4496-94d5-80d60467006d # Home About Us
+fieldLayouts:
+  e1d748b8-8b18-4611-9305-91ea530e2926:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2dd75f70-8fd9-4d3c-b9e4-607b4ac20b50 # Home About Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d8dd151-9da3-4d44-93d7-dab8570a0422
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d10aab37-047a-48ae-b5cf-62f8a54a3bba # Home About Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 021041f6-e5cf-4bc4-913b-2361b4f1070a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a27dd7d-1c21-4e2d-83b9-6346af5c17d3 # Home About Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9fa8944f-c20d-449c-9f99-9a2625f17e67
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cc9cd356-bf16-40d0-90fe-fb7a64e3d507
+        userCondition: null
+fields:
+  2dd75f70-8fd9-4d3c-b9e4-607b4ac20b50: # Home About Title
+    columnSuffix: koeaunqb
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeAboutTitle
+    instructions: null
+    name: 'Home About Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5a27dd7d-1c21-4e2d-83b9-6346af5c17d3: # Home About Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: homeAboutImage
+    instructions: null
+    name: 'Home About Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d10aab37-047a-48ae-b5cf-62f8a54a3bba: # Home About Description
+    columnSuffix: qnmfexqe
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeAboutDescription
+    instructions: null
+    name: 'Home About Description'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: homeAbout
+name: 'Home About'
+sortOrder: 1

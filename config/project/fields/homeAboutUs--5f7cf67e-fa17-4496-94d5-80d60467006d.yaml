@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 369ee378-e78c-45b5-96d7-2810c20427ef # Home Page
+handle: homeAboutUs
+instructions: 'About Us at the home page'
+name: 'Home About Us'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_homeaboutus}}'
+  maxBlocks: 1
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,16 @@
+columnSuffix: klksgmmf
+contentColumnType: string
+fieldGroup: 369ee378-e78c-45b5-96d7-2810c20427ef # Home Page
+handle: banners
+instructions: Banner
+name: Banners
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_banners}}'
+  maxBlocks: 2
+  minBlocks: 2
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

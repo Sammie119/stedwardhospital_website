@@ -1,0 +1,108 @@
+field: 98449dda-5b8d-410b-9c1e-a83db9f480e6 # Home Services
+fieldLayouts:
+  e0a75f0f-fc92-47ad-bef5-b5be69498a5f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3ad5adb6-33a5-4983-87b3-91220d55b703 # Service Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 443d02e2-3d1d-4cd5-9e0e-cc157cecd6b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8321b2a1-5cff-4d36-bf91-d69cb49850a0 # Service Image Descrition
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42acaf6b-add6-4620-9c06-713d324c89af
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 27f67c06-fa01-4b85-8e85-a8522d59273b
+        userCondition: null
+fields:
+  3ad5adb6-33a5-4983-87b3-91220d55b703: # Service Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: serviceImage
+    instructions: 'Home Service Image'
+    name: 'Service Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  8321b2a1-5cff-4d36-bf91-d69cb49850a0: # Service Image Descrition
+    columnSuffix: rmasbsiy
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceImageDescrition
+    instructions: 'Service Image Descrition'
+    name: 'Service Image Descrition'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: homeService
+name: 'Home Service'
+sortOrder: 1

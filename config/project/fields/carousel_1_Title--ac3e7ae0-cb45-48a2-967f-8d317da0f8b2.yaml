@@ -1,0 +1,19 @@
+columnSuffix: dzizeauc
+contentColumnType: text
+fieldGroup: 369ee378-e78c-45b5-96d7-2810c20427ef # Home Page
+handle: carousel_1_Title
+instructions: 'Carousel 1 Title'
+name: 'Carousel 1 Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 1
+  multiline: true
+  placeholder: 'Carousel 1 Title'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

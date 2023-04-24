@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: homePage
+name: 'Home Page'
+propagationMethod: all
+siteSettings:
+  7eb80008-e9ae-442d-990e-2c8d122476cd: # St. Edward Hospital, Dwinyama
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+type: single

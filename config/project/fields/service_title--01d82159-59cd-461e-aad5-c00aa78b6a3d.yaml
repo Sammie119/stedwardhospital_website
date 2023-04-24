@@ -1,0 +1,19 @@
+columnSuffix: oeigaqai
+contentColumnType: text
+fieldGroup: 369ee378-e78c-45b5-96d7-2810c20427ef # Home Page
+handle: service_title
+instructions: 'Title for All'
+name: 'Service Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: Title
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

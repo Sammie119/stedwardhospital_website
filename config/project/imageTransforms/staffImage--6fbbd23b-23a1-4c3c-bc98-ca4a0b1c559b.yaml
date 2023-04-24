@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: staffImage
+height: 450
+interlace: none
+mode: crop
+name: 'Staff Image'
+position: center-center
+quality: null
+upscale: true
+width: 500

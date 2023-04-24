@@ -4,7 +4,7 @@
  */
 
 // Load shared bootstrap
-require dirname(__DIR__) . '/stedwardhospitalgh/bootstrap.php';
+require dirname(__FILE__) . '/bootstrap.php';
 
 // Load and run Craft
 /** @var craft\web\Application $app */

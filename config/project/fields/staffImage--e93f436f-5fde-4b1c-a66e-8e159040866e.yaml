@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 369ee378-e78c-45b5-96d7-2810c20427ef # Home Page
+handle: staffImage
+instructions: 'Staff Image'
+name: 'Staff Image'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_staffimage}}'
+  maxBlocks: 6
+  minBlocks: 3
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

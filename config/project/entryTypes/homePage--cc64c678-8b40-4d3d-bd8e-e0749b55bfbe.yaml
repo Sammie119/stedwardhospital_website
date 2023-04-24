@@ -1,0 +1,211 @@
+fieldLayouts:
+  6326bac3-17af-42b0-baa6-ccef29f34674:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 19a97b52-98c5-4866-bedf-11355d0dee67
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac3e7ae0-cb45-48a2-967f-8d317da0f8b2 # Carousel 1 Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c297ed7-5f15-4209-bc86-ebd977d64bca
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ddd11158-2278-4790-bae2-f87722617ca1 # Carousel 1 Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9347583b-e405-4118-b947-06493f79d38d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07cebb10-7e91-4d66-a6fc-94edbba90f29 # Carousel 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52e7b37b-3670-4988-b403-7952d894dcd7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9d380263-c39c-4837-bef8-c82ef75900a9 # Carousel 2 Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9c0dd2b-cda4-4670-88f6-9ccaf1b2932d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9eba2519-9c26-4850-8f34-be9d93777485 # Carousel 2 Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ff9b6cd-2738-4b3f-b15b-f9e68273d86c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 891e2c26-4c9b-4a7e-8cf9-a7e3419f7432 # Carousel 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a70f9515-a182-455a-b10e-91452f7006cb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Carousel
+        uid: bc37c55a-e6ae-4ff4-83c7-b38bab18b341
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ad7d9367-8f02-4bc5-a8fb-ddd20066226a # Banners
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc6834fa-82a3-4bc9-937a-c22a70bf5544
+            userCondition: null
+            warning: null
+            width: 100
+        name: Banners
+        uid: eb97f41f-de8b-4e5a-9a56-603045ec2dca
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5f7cf67e-fa17-4496-94d5-80d60467006d # Home About Us
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 291c0daf-fd41-4935-bdaf-bfcf82421e65
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'About Us'
+        uid: eb6374ab-faa8-44a5-bb4c-7d4778223002
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 01d82159-59cd-461e-aad5-c00aa78b6a3d # Service Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf12a7fe-edbc-4672-8f61-422032c01e37
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 98449dda-5b8d-410b-9c1e-a83db9f480e6 # Home Services
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a57d9cbe-418d-4a1e-8709-d37521167606
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Home Service'
+        uid: 921b090d-4790-496f-a5b0-a229ffa6fd9e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 68a60340-5be7-4344-b9e5-4b01ed954450 # Staff Section Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 494f3a82-359e-4ff8-ac18-a96e72bfd508
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e93f436f-5fde-4b1c-a66e-8e159040866e # Staff Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3332912f-e356-4797-86cd-4acd6d6968f3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Staff
+        uid: 0792b198-fcd5-4063-9906-f15fb78bd203
+        userCondition: null
+handle: homePage
+hasTitleField: false
+name: 'Home Page'
+section: c0bf0db5-c4a5-4212-ae16-50546e209b56 # Home Page
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

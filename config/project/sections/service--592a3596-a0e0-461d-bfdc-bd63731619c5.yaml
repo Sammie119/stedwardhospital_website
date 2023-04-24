@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: service
+name: Service
+propagationMethod: all
+siteSettings:
+  7eb80008-e9ae-442d-990e-2c8d122476cd: # St. Edward Hospital, Dwinyama
+    enabledByDefault: true
+    hasUrls: true
+    template: service/_entry
+    uriFormat: 'service/{slug}'
+type: channel

@@ -1,13 +1,63 @@
-dateModified: 1679199361
+dateModified: 1682358125
 email:
   fromEmail: info@stewardhospitalgh.org
   fromName: 'St. Edward Hospital, Dwinyama'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/web/img'
+    type: craft\fs\Local
+    url: '@web/web/img/'
 meta:
   __names__:
+    01d82159-59cd-461e-aad5-c00aa78b6a3d: 'Service Title' # Service Title
+    1e701080-19f6-4740-9cc9-6f033dda07e6: Service # Service
+    2dd75f70-8fd9-4d3c-b9e4-607b4ac20b50: 'Home About Title' # Home About Title
+    2e187a4a-55e8-4f94-b493-c2830ee0b14e: bannerText # bannerText
+    2f7a25ba-dc03-429d-856d-e509e40f8701: 'Staff Instagram Handle' # Staff Instagram Handle
+    3ad5adb6-33a5-4983-87b3-91220d55b703: 'Service Image' # Service Image
+    3bf5fb1c-11a4-4cc0-8e39-d83d64106c5c: 'Home ServiceTitle' # Home ServiceTitle
+    4a8ca9ec-9c74-4e4e-a483-33270f00c5d7: 'Staff Position' # Staff Position
+    4bd41aa9-ea55-4791-9022-11112dc4e7e6: 'transformation for home about image' # transformation for home about image
+    5a27dd7d-1c21-4e2d-83b9-6346af5c17d3: 'Home About Image' # Home About Image
+    5f7cf67e-fa17-4496-94d5-80d60467006d: 'Home About Us' # Home About Us
+    6fbbd23b-23a1-4c3c-bc98-ca4a0b1c559b: 'Staff Image' # Staff Image
+    7a06bfa0-f8c7-44da-8c07-5b71df73f553: 'Staff Name' # Staff Name
+    07cebb10-7e91-4d66-a6fc-94edbba90f29: 'Carousel 1' # Carousel 1
     7eb80008-e9ae-442d-990e-2c8d122476cd: 'St. Edward Hospital, Dwinyama' # St. Edward Hospital, Dwinyama
+    9d380263-c39c-4837-bef8-c82ef75900a9: 'Carousel 2 Title' # Carousel 2 Title
+    9eba2519-9c26-4850-8f34-be9d93777485: 'Carousel 2 Text' # Carousel 2 Text
+    31f0372e-1bf6-4316-8cdf-26169b6ce79f: 'transformation for home service image' # transformation for home service image
+    48fecc30-c01c-4e11-a3a1-444810d1a852: 'Home About' # Home About
+    53e7ace5-2656-4d04-a0a8-07c8d78ac9fc: Awards # Awards
+    68a60340-5be7-4344-b9e5-4b01ed954450: 'Staff Section Title' # Staff Section Title
+    369ee378-e78c-45b5-96d7-2810c20427ef: 'Home Page' # Home Page
+    592a3596-a0e0-461d-bfdc-bd63731619c5: Service # Service
+    891e2c26-4c9b-4a7e-8cf9-a7e3419f7432: 'Carousel 2' # Carousel 2
+    8321b2a1-5cff-4d36-bf91-d69cb49850a0: 'Service Image Descrition' # Service Image Descrition
+    46716d8d-3949-49bf-91f2-9143de750edf: 'Staff Image' # Staff Image
+    98449dda-5b8d-410b-9c1e-a83db9f480e6: 'Home Services' # Home Services
     98732b45-a75a-4682-b38f-68211a86d58e: Common # Common
+    37953704-984c-4070-a32f-563a57cec8c8: Banner # Banner
     61374186-d744-4e86-8921-df9aed4a3a13: 'St. Edward Hospital, Dwinyama' # St. Edward Hospital, Dwinyama
+    66539576-e552-409c-8b6a-e9f92817cb98: bannerTitle # bannerTitle
+    aa6970d9-9575-48e3-8ee8-1275d7d6d56d: 'Home Carousel' # Home Carousel
+    ac3e7ae0-cb45-48a2-967f-8d317da0f8b2: 'Carousel 1 Title' # Carousel 1 Title
+    ad7d9367-8f02-4bc5-a8fb-ddd20066226a: Banners # Banners
+    bcb8126a-4fd3-4529-8fd1-70c05b6dee98: 'Staff Facebook Handle' # Staff Facebook Handle
+    c0bf0db5-c4a5-4212-ae16-50546e209b56: 'Home Page' # Home Page
+    c242cc6b-bcd1-4acf-a08e-6cab6d2e8b7a: bg-color # bg-color
+    cc64c678-8b40-4d3d-bd8e-e0749b55bfbe: 'Home Page' # Home Page
+    ce5aed38-d46c-42b2-bc7f-b9a7aa949009: Staff # Staff
+    d10aab37-047a-48ae-b5cf-62f8a54a3bba: 'Home About Description' # Home About Description
+    d28be02d-887e-4b26-b1cd-b7285dfa262b: 'Home Service' # Home Service
+    db4d347e-39df-4603-ab9d-364a4cf7f159: Images # Images
+    ddd11158-2278-4790-bae2-f87722617ca1: 'Carousel 1 Text' # Carousel 1 Text
+    e93f436f-5fde-4b1c-a66e-8e159040866e: 'Staff Image' # Staff Image
+    fad83b92-0189-4ac0-a504-b5d4abbb8aa0: 'Staff Twitter Handle' # Staff Twitter Handle
 plugins:
   redactor:
     edition: standard

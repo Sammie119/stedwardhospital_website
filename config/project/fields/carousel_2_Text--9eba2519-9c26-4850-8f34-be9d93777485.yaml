@@ -1,0 +1,19 @@
+columnSuffix: pndpqtkn
+contentColumnType: text
+fieldGroup: 369ee378-e78c-45b5-96d7-2810c20427ef # Home Page
+handle: carousel_2_Text
+instructions: 'Carousel 1 Text'
+name: 'Carousel 2 Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 3
+  multiline: true
+  placeholder: 'Carousel 2 Text'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

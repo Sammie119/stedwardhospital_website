@@ -1,0 +1,118 @@
+field: ad7d9367-8f02-4bc5-a8fb-ddd20066226a # Banners
+fieldLayouts:
+  d35cb240-0478-4d04-b71b-989335ed897e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 66539576-e552-409c-8b6a-e9f92817cb98 # bannerTitle
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 450a8481-55ce-4c5b-a0ae-d0b4e6738cb4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2e187a4a-55e8-4f94-b493-c2830ee0b14e # bannerText
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed2851ed-31de-4e72-967d-2d35bc39eb8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c242cc6b-bcd1-4acf-a08e-6cab6d2e8b7a # bg-color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68e6c507-29e5-4a6c-b3e6-6d23acd2ddf7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ad42ced0-9f0c-4a65-b6c4-813b39f56f79
+        userCondition: null
+fields:
+  2e187a4a-55e8-4f94-b493-c2830ee0b14e: # bannerText
+    columnSuffix: bxmahqpt
+    contentColumnType: text
+    fieldGroup: null
+    handle: bannertext
+    instructions: null
+    name: bannerText
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  66539576-e552-409c-8b6a-e9f92817cb98: # bannerTitle
+    columnSuffix: tbkuklnl
+    contentColumnType: text
+    fieldGroup: null
+    handle: bannertitle
+    instructions: null
+    name: bannerTitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c242cc6b-bcd1-4acf-a08e-6cab6d2e8b7a: # bg-color
+    columnSuffix: huwuepoe
+    contentColumnType: text
+    fieldGroup: null
+    handle: bgColor
+    instructions: null
+    name: bg-color
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: banner
+name: Banner
+sortOrder: 1

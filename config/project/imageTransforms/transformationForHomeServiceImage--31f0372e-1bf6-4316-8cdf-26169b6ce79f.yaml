@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: transformationForHomeServiceImage
+height: 300
+interlace: none
+mode: crop
+name: 'transformation for home service image'
+position: center-center
+quality: null
+upscale: true
+width: 500

@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: transformationForHomeAboutImage
+height: 600
+interlace: none
+mode: crop
+name: 'transformation for home about image'
+position: center-center
+quality: null
+upscale: true
+width: 600

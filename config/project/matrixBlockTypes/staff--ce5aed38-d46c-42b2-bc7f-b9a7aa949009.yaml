@@ -1,0 +1,236 @@
+field: e93f436f-5fde-4b1c-a66e-8e159040866e # Staff Image
+fieldLayouts:
+  5e687059-7d40-44b3-825a-80c9baa42eba:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7a06bfa0-f8c7-44da-8c07-5b71df73f553 # Staff Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fc9d5aa-5a71-4543-ba51-e7d835bc51d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4a8ca9ec-9c74-4e4e-a483-33270f00c5d7 # Staff Position
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f21d8d9b-1d14-4597-9d8d-fef90ea3d434
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 46716d8d-3949-49bf-91f2-9143de750edf # Staff Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a89fe45e-f136-4b9e-b35d-2e21b794a79b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bcb8126a-4fd3-4529-8fd1-70c05b6dee98 # Staff Facebook Handle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 658486ea-9ec6-4709-bdfa-c4d699f8a5f4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fad83b92-0189-4ac0-a504-b5d4abbb8aa0 # Staff Twitter Handle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9b63ba3-e09c-4880-98a4-4d545387291b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2f7a25ba-dc03-429d-856d-e509e40f8701 # Staff Instagram Handle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af6ee1a2-68b2-4eee-8325-bddb3de03215
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9e5e4363-7eba-41c3-9fe3-00bb84e0a0f2
+        userCondition: null
+fields:
+  2f7a25ba-dc03-429d-856d-e509e40f8701: # Staff Instagram Handle
+    columnSuffix: lfpjgwet
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffInstagramHandle
+    instructions: 'Staff Instagram Handle'
+    name: 'Staff Instagram Handle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'Staff Instagram Handle'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4a8ca9ec-9c74-4e4e-a483-33270f00c5d7: # Staff Position
+    columnSuffix: adtcvgkd
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffPosition
+    instructions: 'Staff Position'
+    name: 'Staff Position'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7a06bfa0-f8c7-44da-8c07-5b71df73f553: # Staff Name
+    columnSuffix: feuwtuom
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffName
+    instructions: 'Staff Name'
+    name: 'Staff Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'Staff Name'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  46716d8d-3949-49bf-91f2-9143de750edf: # Staff Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: staff_image
+    instructions: 'Staff Image'
+    name: 'Staff Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:db4d347e-39df-4603-ab9d-364a4cf7f159' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  bcb8126a-4fd3-4529-8fd1-70c05b6dee98: # Staff Facebook Handle
+    columnSuffix: zzphjans
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffFacebookHandle
+    instructions: 'Staff Facebook Handle'
+    name: 'Staff Facebook Handle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'Staff Facebook Handle'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fad83b92-0189-4ac0-a504-b5d4abbb8aa0: # Staff Twitter Handle
+    columnSuffix: oyfyrwiz
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffTwitterHandle
+    instructions: 'Staff Twitter Handle'
+    name: 'Staff Twitter Handle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: 'Staff Twitter Handle'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: staff
+name: Staff
+sortOrder: 1

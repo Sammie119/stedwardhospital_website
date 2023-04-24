@@ -1,0 +1,43 @@
+fieldLayouts:
+  dccd3251-5f65-46fa-96e5-1ae5aec75686:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cba609a6-de7c-4770-91fe-a9e700d3083c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2ee747d9-c93a-4a3c-9227-276a52eae474
+        userCondition: null
+handle: service
+hasTitleField: true
+name: Service
+section: 592a3596-a0e0-461d-bfdc-bd63731619c5 # Service
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

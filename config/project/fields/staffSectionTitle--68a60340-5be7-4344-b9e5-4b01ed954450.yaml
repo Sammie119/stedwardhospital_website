@@ -1,0 +1,19 @@
+columnSuffix: salidnds
+contentColumnType: text
+fieldGroup: 369ee378-e78c-45b5-96d7-2810c20427ef # Home Page
+handle: staffSectionTitle
+instructions: null
+name: 'Staff Section Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
