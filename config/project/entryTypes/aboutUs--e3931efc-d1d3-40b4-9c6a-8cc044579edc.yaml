@@ -1,5 +1,5 @@
 fieldLayouts:
-  dccd3251-5f65-46fa-96e5-1ae5aec75686:
+  915128da-9087-4f70-a939-30a7b4a6a216:
     tabs:
       -
         elementCondition: null
@@ -26,31 +26,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: cba609a6-de7c-4770-91fe-a9e700d3083c
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 1035e9ec-c409-454a-9414-e50a9bab5e9d # Photos
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a4f3fe41-f128-49c0-86ef-5ffaabe6a00c
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: c7810442-6833-4de5-99fc-1eee12ab1cde # Rich Text
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 00e98be6-d6c2-4380-b05b-039bce85509a
+            uid: c3994483-62e8-4edb-b9e7-128bbe9bd012
             userCondition: null
             warning: null
             width: 100
@@ -62,18 +38,54 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8fa694dd-0bb4-40b6-9ed9-71bee9e2cf19
+            uid: 48d94cf1-810f-44db-b8c5-644cf688b8c9
             userCondition: null
             warning: null
             width: 100
-        name: Hero
-        uid: 2ee747d9-c93a-4a3c-9227-276a52eae474
+          -
+            elementCondition: null
+            fieldUid: 891e2c26-4c9b-4a7e-8cf9-a7e3419f7432 # Carousel 2
+            instructions: null
+            label: Banner
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 779afe7f-0883-478d-ad86-b73b2b6c1d61
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c7810442-6833-4de5-99fc-1eee12ab1cde # Rich Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9fcaae10-4eb7-44ff-b86a-51e95f9c9c71
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07cebb10-7e91-4d66-a6fc-94edbba90f29 # Carousel 1
+            instructions: null
+            label: 'About Image'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8d0f75fb-70dd-4957-9782-c2de34a173b8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 16fe91d6-b746-4a33-b27a-89a884e88d2c
         userCondition: null
-handle: service
+handle: aboutUs
 hasTitleField: true
-name: Service
-section: 592a3596-a0e0-461d-bfdc-bd63731619c5 # Services
+name: 'About Us'
+section: c710dda9-161e-4720-ab3c-ef508310a05b # About Us
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

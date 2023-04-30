@@ -1,0 +1,19 @@
+columnSuffix: vnaegkea
+contentColumnType: string(400)
+fieldGroup: 98732b45-a75a-4682-b38f-68211a86d58e # Common
+handle: emailAddress
+instructions: null
+name: 'Email Address'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 100
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'Email Address'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

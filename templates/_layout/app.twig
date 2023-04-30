@@ -45,22 +45,22 @@
         </div>
         <!-- Spinner End -->
 
-
+        {% set getInfo = craft.entries.section('layoutListing').one() %}
         <!-- Topbar Start -->
         <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
             <div class="row gx-0">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Sun - Mon : 6.00 am - 6.00 am </small>
+                        <small class="py-2"><i class="far fa-clock text-primary me-2"></i>{{ getInfo.pageTitle }} </small>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
                     <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                         <div class="me-3 pe-3 border-end py-2">
-                            <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@stedwardhospitalgh.org</p>
+                            <p class="m-0"><i class="fa fa-envelope-open me-2"></i>{{ getInfo.emailAddress }}</p>
                         </div>
                         <div class="py-2">
-                            <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                            <p class="m-0"><i class="fa fa-phone-alt me-2"></i>{{ getInfo.telNumber }}</p>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,8 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="{{ siteUrl }}" class="nav-item nav-link {% if(craft.app.request.segments|first == "") %} active {% endif %}">Home</a>
-                    <a href="service" class="nav-item nav-link {% if(craft.app.request.segments|first == "service") %} active {% endif %}">Service</a>
+                    <a href="{{ siteUrl }}service" class="nav-item nav-link {% if(craft.app.request.segments|first == "service") %} active {% endif %}">Services</a>
+                    <a href="{{ siteUrl }}blog" class="nav-item nav-link {% if(craft.app.request.segments|first == "blog") %} active {% endif %}">News Blog</a>
 {#                    <div class="nav-item dropdown">#}
 {#                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>#}
 {#                        <div class="dropdown-menu m-0">#}
@@ -90,11 +91,11 @@
 {#                            <a href="appointment.html" class="dropdown-item">Appointment</a>#}
 {#                        </div>#}
 {#                    </div>#}
-                    <a href="about" class="nav-item nav-link {% if(craft.app.request.segments|first == "about") %} active {% endif %}">About Us</a>
-                    <a href="contact" class="nav-item nav-link {% if(craft.app.request.segments|first == "contact") %} active {% endif %}">Contact Us</a>
+                    <a href="{{ siteUrl }}about" class="nav-item nav-link {% if(craft.app.request.segments|first == "about") %} active {% endif %}">About Us</a>
+                    <a href="{{ siteUrl }}contact" class="nav-item nav-link {% if(craft.app.request.segments|first == "contact") %} active {% endif %}">Contact Us</a>
                 </div>
-                <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-                <a href="appointment" class="btn btn-primary py-2 px-4 ms-3 {% if(craft.app.request.segments|first == "appointment") %} active {% endif %}">Appointment</a>
+{#                <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>#}
+{#                <a href="{{ siteUrl }}appointment" class="btn btn-primary py-2 px-4 ms-3 {% if(craft.app.request.segments|first == "appointment") %} active {% endif %}">Appointment</a>#}
             </div>
         </nav>
         <!-- Navbar End -->
@@ -121,28 +122,36 @@
 
         {% endblock %}
 
+        <!-- Newsletter Start -->
+        <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+            <div class="container">
+                <div class="bg-primary p-1"> </div>
+            </div>
+        </div>
+        <!-- Newsletter End -->
+
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
             <div class="container pt-5">
                 <div class="row g-5 pt-4">
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Location</h3>
-                        <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>{{ getInfo.location }}</p>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <h3 class="text-white mb-4">Email</h3>
-                        <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@stedwardhospitalgh.org</p>
+                        <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>{{ getInfo.emailAddress }}</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Call</h3>
-                        <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                        <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>{{ getInfo.telNumber }}</p>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <h3 class="text-white mb-4">Follow Us</h3>
                         <div class="d-flex">
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="{{ getInfo.twitterAddress }}"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="{{ getInfo.facebookAddress }}"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="{{ getInfo.instagramAddress }}"><i class="fab fa-instagram fw-normal"></i></a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,139 @@
+fieldLayouts:
+  ed49c44b-adef-423d-9c95-b136e9cdb6af:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b753c1a2-f295-48f6-849d-590d334f18cb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aa8454cc-0332-4ebe-9603-d4a3484708a0 # Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a0399dc0-070e-4a8e-9d19-c70795bff7cb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 093b96ce-f018-4a98-99c3-d6f8f1344404 # Location
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 162d3792-edba-48f0-be3f-81034a0edcff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9ee8328f-52de-43e8-adfe-d898c5b75943 # Email Address
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bdd1760-f542-41ac-b7af-149c7cf8d960
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6d9f4e85-c20c-4bb7-a4ac-1291b563907b # Tel Number
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21c914da-7fbe-4c4e-aac7-4f188e762dd2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a25691bc-ec38-4d26-ac90-424df0a3f414 # Twitter Address
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83482683-7c5d-4c44-9f57-b33852f349b2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1a794e8-76c2-40f8-9d0b-93588cac6e3f # Facebook Address
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fa2e0c9-dbd7-47ee-bd11-2dea16aa405f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cb979a56-f588-4638-a2d8-33a4cd74d81f # Instagram Address
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d1f2235-8a59-43f8-80ee-b6179a65cadc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b65062c5-bc23-44c5-8088-439939e7dd6e # Send to Email
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aaefc5c8-1641-4385-8d74-e014a2a5ae48
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1bb7b2a0-63fb-4e47-b42f-4a06d26f05ed
+        userCondition: null
+handle: layoutListing
+hasTitleField: false
+name: 'Layout Listing'
+section: d3d87ec6-e6e4-4328-a770-93fb3faa88f3 # Layout Listing
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

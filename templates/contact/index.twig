@@ -2,6 +2,127 @@
 
 {% block content %}
 
-{{ dump(craft.app.request.segments|first) }}
+    <!-- Hero Start -->
+    {% set bgimage = entry.carousel_1.one() %}
+    <div class="container-fluid bg-primary py-5 hero-header mb-1" style="background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url({{ bgimage.getUrl('homeCarousel') }}) center center no-repeat;">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">{{ entry.title }}</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Contact Start -->
+    {% if craft.app.session.hasFlash('notice') %}
+        <p class="message notice" style="color: red">{{ craft.app.session.getFlash('notice') }}</p>
+    {% elseif craft.app.session.hasFlash('error') %}
+        <p class="message error" style="color: red">{{ craft.app.session.getFlash('error') }}</p>
+    {% endif %}
+
+    {% set getInfo = craft.entries.section('layoutListing').one() %}
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded h-100 p-5">
+                        <div class="section-title">
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Contact Us</h5>
+                            <h1 class="display-6 mb-4">{{ entry.pageTitle }}</h1>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-0">Our Office</h5>
+                                <span>{{ getInfo.location }}</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-0">Email Us</h5>
+                                <span>{{ getInfo.emailAddress }}</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-0">Call Us</h5>
+                                <span>{{ getInfo.telNumber }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                    {% macro errorList(errors) %}
+                        {% if errors %}
+                            {{ ul(errors, {class: 'errors'}) }}
+                        {% endif %}
+                    {% endmacro %}
+
+                    {% set submission = submission ?? null %}
+                    <form method="post" action="" accept-charset="UTF-8">
+                        {{ csrfInput() }}
+                        {{ actionInput('contact-form/send') }}
+                        {{ redirectInput('contact/thanks') }}
+
+                        <input type="hidden" name="toEmail" value="{{ getInfo.sendToEmail | hash }}">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                {{ input('text', 'fromName', submission.fromName ?? '', {
+                                    id: 'from-name',
+                                    autocomplete: 'name',
+                                    class: 'form-control border-0 bg-light px-4',
+                                    placeholder: 'Your Name',
+                                    style: 'height: 55px',
+                                }) }}
+                                <span style="color: red">{{ submission ? _self.errorList(submission.getErrors('fromName')) }}</span>
+                            </div>
+                            <div class="col-12">
+                                {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+                                    id: 'from-email',
+                                    autocomplete: 'email',
+                                    class: 'form-control border-0 bg-light px-4',
+                                    placeholder: 'Your Email',
+                                    style: 'height: 55px',
+                                }) }}
+                                <span style="color: red">{{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}</span>
+                            </div>
+                            <div class="col-12">
+                                {{ input('text', 'subject', submission.subject ?? '', {
+                                    id: 'subject',
+                                    class: 'form-control border-0 bg-light px-4',
+                                    placeholder: 'Subject',
+                                    style: 'height: 55px',
+                                }) }}
+                                <span style="color: red">{{ submission ? _self.errorList(submission.getErrors('subject')) }}</span>
+                            </div>
+                            <div class="col-12">
+                                {{ tag('textarea', {
+                                    text: submission.message ?? '',
+                                    id: 'message',
+                                    name: 'message',
+                                    rows: 5,
+                                    cols: 40,
+                                    class: 'form-control border-0 bg-light px-4',
+                                    placeholder: 'Message',
+                                }) }}
+                                <span style="color: red">{{ submission ? _self.errorList(submission.getErrors('message')) }}</span>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-4 col-lg-12 wow slideInUp" data-wow-delay="0.6s">
+                    <iframe class="position-relative rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4042494.981665211!2d-4.2894858!3d8.3277204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb08f9369644a3%3A0x1763ec8fa5572306!2sSaint%20Edwards%20Clinic!5e0!3m2!1sen!2sgh!4v1682538017962!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
 
 {% endblock %}

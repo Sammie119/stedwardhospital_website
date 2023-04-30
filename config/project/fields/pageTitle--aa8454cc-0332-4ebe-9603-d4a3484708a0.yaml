@@ -1,0 +1,19 @@
+columnSuffix: rzxybgmc
+contentColumnType: string(800)
+fieldGroup: 98732b45-a75a-4682-b38f-68211a86d58e # Common
+handle: pageTitle
+instructions: null
+name: 'Page Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 200
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'Page title'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

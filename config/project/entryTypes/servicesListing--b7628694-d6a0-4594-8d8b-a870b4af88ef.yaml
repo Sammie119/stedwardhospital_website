@@ -1,5 +1,5 @@
 fieldLayouts:
-  dccd3251-5f65-46fa-96e5-1ae5aec75686:
+  56b7508d-0edc-4d0f-b9fb-fd481fb050b2:
     tabs:
       -
         elementCondition: null
@@ -26,54 +26,42 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: cba609a6-de7c-4770-91fe-a9e700d3083c
+            uid: 946d66c0-a22b-40c3-be75-03c316db357b
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 1035e9ec-c409-454a-9414-e50a9bab5e9d # Photos
+            fieldUid: 01d82159-59cd-461e-aad5-c00aa78b6a3d # Service Title
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a4f3fe41-f128-49c0-86ef-5ffaabe6a00c
+            uid: baeb667f-c887-4196-9a55-3354c13b991d
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: c7810442-6833-4de5-99fc-1eee12ab1cde # Rich Text
+            fieldUid: 07cebb10-7e91-4d66-a6fc-94edbba90f29 # Carousel 1
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 00e98be6-d6c2-4380-b05b-039bce85509a
+            uid: 924f8d29-7bdc-4635-8697-0f922fbaf071
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 6580fc11-bcf4-4080-a97b-01c688d7012f # Short Description
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8fa694dd-0bb4-40b6-9ed9-71bee9e2cf19
-            userCondition: null
-            warning: null
-            width: 100
-        name: Hero
-        uid: 2ee747d9-c93a-4a3c-9227-276a52eae474
+        name: Content
+        uid: 3b5836e9-bef3-465e-9606-52a35a37c97b
         userCondition: null
-handle: service
+handle: servicesListing
 hasTitleField: true
-name: Service
-section: 592a3596-a0e0-461d-bfdc-bd63731619c5 # Services
+name: 'Services Listing'
+section: 4619320a-5672-4840-9ff5-f697dd2e0d58 # Services Listing
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

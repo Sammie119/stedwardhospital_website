@@ -1,8 +1,16 @@
-dateModified: 1682358125
+dateModified: 1682698447
 email:
-  fromEmail: info@stewardhospitalgh.org
+  fromEmail: duah@tacmail.org
   fromName: 'St. Edward Hospital, Dwinyama'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: duah@tacmail.org
+  template: null
+  transportSettings:
+    host: tacmail.org
+    password: '&R@J+2L'
+    port: '25'
+    useAuthentication: '1'
+    username: duah@tacmail.org
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   images:
     hasUrls: true
@@ -24,41 +32,76 @@ meta:
     4bd41aa9-ea55-4791-9022-11112dc4e7e6: 'transformation for home about image' # transformation for home about image
     5a27dd7d-1c21-4e2d-83b9-6346af5c17d3: 'Home About Image' # Home About Image
     5f7cf67e-fa17-4496-94d5-80d60467006d: 'Home About Us' # Home About Us
+    6d9f4e85-c20c-4bb7-a4ac-1291b563907b: 'Tel Number' # Tel Number
     6fbbd23b-23a1-4c3c-bc98-ca4a0b1c559b: 'Staff Image' # Staff Image
     7a06bfa0-f8c7-44da-8c07-5b71df73f553: 'Staff Name' # Staff Name
     07cebb10-7e91-4d66-a6fc-94edbba90f29: 'Carousel 1' # Carousel 1
     7eb80008-e9ae-442d-990e-2c8d122476cd: 'St. Edward Hospital, Dwinyama' # St. Edward Hospital, Dwinyama
+    9d1cfb5c-1bd4-4177-974b-d5eba29fb777: 'Contact Us' # Contact Us
     9d380263-c39c-4837-bef8-c82ef75900a9: 'Carousel 2 Title' # Carousel 2 Title
     9eba2519-9c26-4850-8f34-be9d93777485: 'Carousel 2 Text' # Carousel 2 Text
+    9ee8328f-52de-43e8-adfe-d898c5b75943: 'Email Address' # Email Address
     31f0372e-1bf6-4316-8cdf-26169b6ce79f: 'transformation for home service image' # transformation for home service image
     48fecc30-c01c-4e11-a3a1-444810d1a852: 'Home About' # Home About
     53e7ace5-2656-4d04-a0a8-07c8d78ac9fc: Awards # Awards
     68a60340-5be7-4344-b9e5-4b01ed954450: 'Staff Section Title' # Staff Section Title
+    093b96ce-f018-4a98-99c3-d6f8f1344404: Location # Location
+    108a81f0-21fa-4699-9dd2-28a15fb8583b: Services # Services
+    171a5b1a-447a-4c4f-8446-61bb8deade78: 'News Blog' # News Blog
     369ee378-e78c-45b5-96d7-2810c20427ef: 'Home Page' # Home Page
-    592a3596-a0e0-461d-bfdc-bd63731619c5: Service # Service
+    592a3596-a0e0-461d-bfdc-bd63731619c5: Services # Services
+    803d2c3d-46be-49be-a690-2e4c161b1be6: 'News Blog' # News Blog
     891e2c26-4c9b-4a7e-8cf9-a7e3419f7432: 'Carousel 2' # Carousel 2
+    1035e9ec-c409-454a-9414-e50a9bab5e9d: Photos # Photos
+    6580fc11-bcf4-4080-a97b-01c688d7012f: 'Short Description' # Short Description
     8321b2a1-5cff-4d36-bf91-d69cb49850a0: 'Service Image Descrition' # Service Image Descrition
+    21965bbe-a485-460b-bcd2-3cb57dfae29e: 'Contact Us' # Contact Us
     46716d8d-3949-49bf-91f2-9143de750edf: 'Staff Image' # Staff Image
     98449dda-5b8d-410b-9c1e-a83db9f480e6: 'Home Services' # Home Services
     98732b45-a75a-4682-b38f-68211a86d58e: Common # Common
+    4619320a-5672-4840-9ff5-f697dd2e0d58: 'Services Listing' # Services Listing
     37953704-984c-4070-a32f-563a57cec8c8: Banner # Banner
     61374186-d744-4e86-8921-df9aed4a3a13: 'St. Edward Hospital, Dwinyama' # St. Edward Hospital, Dwinyama
     66539576-e552-409c-8b6a-e9f92817cb98: bannerTitle # bannerTitle
+    a44b777a-c330-46d3-bfd9-90b27a4ff78c: 'Layout Listing' # Layout Listing
+    a25691bc-ec38-4d26-ac90-424df0a3f414: 'Twitter Address' # Twitter Address
     aa6970d9-9575-48e3-8ee8-1275d7d6d56d: 'Home Carousel' # Home Carousel
+    aa8454cc-0332-4ebe-9603-d4a3484708a0: 'Page Title' # Page Title
     ac3e7ae0-cb45-48a2-967f-8d317da0f8b2: 'Carousel 1 Title' # Carousel 1 Title
     ad7d9367-8f02-4bc5-a8fb-ddd20066226a: Banners # Banners
+    b65062c5-bc23-44c5-8088-439939e7dd6e: 'Send to Email' # Send to Email
+    b7628694-d6a0-4594-8d8b-a870b4af88ef: 'Services Listing' # Services Listing
     bcb8126a-4fd3-4529-8fd1-70c05b6dee98: 'Staff Facebook Handle' # Staff Facebook Handle
     c0bf0db5-c4a5-4212-ae16-50546e209b56: 'Home Page' # Home Page
     c242cc6b-bcd1-4acf-a08e-6cab6d2e8b7a: bg-color # bg-color
+    c710dda9-161e-4720-ab3c-ef508310a05b: 'About Us' # About Us
+    c7810442-6833-4de5-99fc-1eee12ab1cde: 'Rich Text' # Rich Text
+    cb979a56-f588-4638-a2d8-33a4cd74d81f: 'Instagram Address' # Instagram Address
     cc64c678-8b40-4d3d-bd8e-e0749b55bfbe: 'Home Page' # Home Page
     ce5aed38-d46c-42b2-bc7f-b9a7aa949009: Staff # Staff
+    d3d87ec6-e6e4-4328-a770-93fb3faa88f3: 'Layout Listing' # Layout Listing
     d10aab37-047a-48ae-b5cf-62f8a54a3bba: 'Home About Description' # Home About Description
     d28be02d-887e-4b26-b1cd-b7285dfa262b: 'Home Service' # Home Service
+    daf1b712-9965-4d88-bd45-387e079d8106: 'Blog Listing' # Blog Listing
     db4d347e-39df-4603-ab9d-364a4cf7f159: Images # Images
     ddd11158-2278-4790-bae2-f87722617ca1: 'Carousel 1 Text' # Carousel 1 Text
+    e1a794e8-76c2-40f8-9d0b-93588cac6e3f: 'Facebook Address' # Facebook Address
     e93f436f-5fde-4b1c-a66e-8e159040866e: 'Staff Image' # Staff Image
+    e3931efc-d1d3-40b4-9c6a-8cc044579edc: 'About Us' # About Us
+    ed16eca0-b883-4ac5-9366-1e11c0b78107: 'Blog Listing' # Blog Listing
     fad83b92-0189-4ac0-a504-b5d4abbb8aa0: 'Staff Twitter Handle' # Staff Twitter Handle
 plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from St. Edward Hospital Contact form'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: sammav2018@gmail.com
   redactor:
     edition: standard
     enabled: true
@@ -67,8 +110,9 @@ system:
   edition: solo
   live: true
   name: 'St. Edward Hospital, Dwinyama'
+  retryDuration: null
   schemaVersion: 4.4.0.4
-  timeZone: America/Los_Angeles
+  timeZone: Africa/Accra
 users:
   allowPublicRegistration: false
   defaultGroup: null

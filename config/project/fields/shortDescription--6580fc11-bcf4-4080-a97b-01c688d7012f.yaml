@@ -1,0 +1,19 @@
+columnSuffix: aytyzkuo
+contentColumnType: text
+fieldGroup: 98732b45-a75a-4682-b38f-68211a86d58e # Common
+handle: shortDescription
+instructions: 'Short Description'
+name: 'Short Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 3
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
