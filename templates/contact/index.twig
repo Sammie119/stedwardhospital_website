@@ -20,7 +20,7 @@
         <p class="message error" style="color: red">{{ craft.app.session.getFlash('error') }}</p>
     {% endif %}
 
-    {% set getInfo = craft.entries.section('layoutListing').one() %}
+    {% set getInfo = footer %}
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5">
@@ -33,7 +33,7 @@
                         <div class="d-flex align-items-center mb-2">
                             <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                             <div class="text-start">
-                                <h5 class="mb-0">Our Office</h5>
+                                <h5 class="mb-0">Location</h5>
                                 <span>{{ getInfo.location }}</span>
                             </div>
                         </div>

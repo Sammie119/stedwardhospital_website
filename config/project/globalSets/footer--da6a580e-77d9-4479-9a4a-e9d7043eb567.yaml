@@ -1,47 +1,9 @@
 fieldLayouts:
-  ed49c44b-adef-423d-9c95-b136e9cdb6af:
+  a2b940b5-770b-4c76-9538-3f15dd37747f:
     tabs:
       -
         elementCondition: null
         elements:
-          -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: b753c1a2-f295-48f6-849d-590d334f18cb
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: aa8454cc-0332-4ebe-9603-d4a3484708a0 # Page Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a0399dc0-070e-4a8e-9d19-c70795bff7cb
-            userCondition: null
-            warning: null
-            width: 100
           -
             elementCondition: null
             fieldUid: 093b96ce-f018-4a98-99c3-d6f8f1344404 # Location
@@ -50,7 +12,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 162d3792-edba-48f0-be3f-81034a0edcff
+            uid: a5406224-934c-41df-9231-2e90d76c08e0
             userCondition: null
             warning: null
             width: 100
@@ -62,19 +24,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2bdd1760-f542-41ac-b7af-149c7cf8d960
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6d9f4e85-c20c-4bb7-a4ac-1291b563907b # Tel Number
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 21c914da-7fbe-4c4e-aac7-4f188e762dd2
+            uid: a270d23d-a3ae-4fd0-bb87-bf1e8f65953a
             userCondition: null
             warning: null
             width: 100
@@ -86,7 +36,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 83482683-7c5d-4c44-9f57-b33852f349b2
+            uid: 9edbbf36-68c6-4fa1-a626-df75db10f7ff
             userCondition: null
             warning: null
             width: 100
@@ -98,7 +48,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1fa2e0c9-dbd7-47ee-bd11-2dea16aa405f
+            uid: e30ae398-2bb9-4c3d-87f8-fd9fc0c3a5e9
             userCondition: null
             warning: null
             width: 100
@@ -110,7 +60,19 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6d1f2235-8a59-43f8-80ee-b6179a65cadc
+            uid: fb8a8083-7ac5-4f4c-8649-5105b074a9ab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6d9f4e85-c20c-4bb7-a4ac-1291b563907b # Tel Number
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d2f6d0c-2d39-4238-811b-4d0031d69d4c
             userCondition: null
             warning: null
             width: 100
@@ -122,18 +84,25 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: aaefc5c8-1641-4385-8d74-e014a2a5ae48
+            uid: 9066e1df-f81e-47ed-8d43-ce862962544c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aa8454cc-0332-4ebe-9603-d4a3484708a0 # Page Title
+            instructions: null
+            label: 'Top Bar Text'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe01be2d-a366-47df-8f93-28b8e45decd0
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 1bb7b2a0-63fb-4e47-b42f-4a06d26f05ed
+        uid: 21889e6f-62c6-4fde-8096-d72b485514a6
         userCondition: null
-handle: layoutListing
-hasTitleField: false
-name: 'Layout Listing'
-section: d3d87ec6-e6e4-4328-a770-93fb3faa88f3 # Layout Listing
-sortOrder: 1
-titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+handle: footer
+name: Footer
+sortOrder: 2

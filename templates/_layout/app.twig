@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>St. Edward Hospital, Dwinyama</title>
+        <title>{{ siteName }}</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
         <!-- Favicon -->
@@ -45,7 +45,7 @@
         </div>
         <!-- Spinner End -->
 
-        {% set getInfo = craft.entries.section('layoutListing').one() %}
+        {% set getInfo = footer %}
         <!-- Topbar Start -->
         <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
             <div class="row gx-0">
@@ -72,30 +72,27 @@
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
             <a href="{{ siteUrl }}" class="navbar-brand p-0">
-                <h1 class="m-0 text-primary"><i class="fas fa-h-square"></i>ospital</h1>
+                <h1 class="m-0 text-primary"><i class="fas fa-h-square"></i> {{ siteName }}</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="{{ siteUrl }}" class="nav-item nav-link {% if(craft.app.request.segments|first == "") %} active {% endif %}">Home</a>
-                    <a href="{{ siteUrl }}service" class="nav-item nav-link {% if(craft.app.request.segments|first == "service") %} active {% endif %}">Services</a>
-                    <a href="{{ siteUrl }}blog" class="nav-item nav-link {% if(craft.app.request.segments|first == "blog") %} active {% endif %}">News Blog</a>
-{#                    <div class="nav-item dropdown">#}
-{#                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>#}
-{#                        <div class="dropdown-menu m-0">#}
-{#                            <a href="price.html" class="dropdown-item">Pricing Plan</a>#}
-{#                            <a href="team.html" class="dropdown-item">Our Dentist</a>#}
-{#                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>#}
-{#                            <a href="appointment.html" class="dropdown-item">Appointment</a>#}
-{#                        </div>#}
-{#                    </div>#}
-                    <a href="{{ siteUrl }}about" class="nav-item nav-link {% if(craft.app.request.segments|first == "about") %} active {% endif %}">About Us</a>
-                    <a href="{{ siteUrl }}contact" class="nav-item nav-link {% if(craft.app.request.segments|first == "contact") %} active {% endif %}">Contact Us</a>
+
+                    {% for link in header.navLinks.all() %}
+                        {% set destination = link.linkDestination.one() %}
+
+                        {% if destination.uri == "__home__" %}
+                            {% set activeLink = craft.app.request.segments|first == "" %}
+                        {% else %}
+                            {% set activeLink = craft.app.request.segments|first == destination.uri %}
+                        {% endif %}
+
+                        <a href="{{ destination.url }}" class="nav-item nav-link {% if activeLink %} active {% endif %}">{{ link.linkText }}</a>
+
+                    {% endfor %}
                 </div>
-{#                <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>#}
-{#                <a href="{{ siteUrl }}appointment" class="btn btn-primary py-2 px-4 ms-3 {% if(craft.app.request.segments|first == "appointment") %} active {% endif %}">Appointment</a>#}
             </div>
         </nav>
         <!-- Navbar End -->

@@ -22,14 +22,16 @@
                     <div class="section-title mb-3">
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">News Blog</h5>
                     </div>
-
                     {% for blog in blogs %}
+                        <article class="blog-post">
+                            <h2 class="blog-post-title mb-1">{{ blog.title }}</h2>
+                            <p class="blog-post-meta">by <a href="#">{{ blog.service_title }}</a> on {{ blog.postDate | date('M d, Y')}}</p>
 
-                        <h4 class="mb-0">{{ blog.title }}</h4> <i>{{ blog.service_title }}</i>
-                        <hr class="w-25">
-                        <p class="mb-4">{{ blog.shortDescription }} <br>
+                            <p>{{ blog.shortDescription }}</p>
+
                             <a href="{{ blog.url }}">Read more <i class="fas fa-angle-double-right"></i></a></p>
-
+                            <hr>
+                        </article>
                     {% endfor %}
                 </div>
             </div>

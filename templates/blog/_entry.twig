@@ -27,7 +27,8 @@
                 <div class="col-lg-12">
                     {{ entry.richText }}
 
-                    <h4 class="text-body fst-italic mb-4">Author: {{ entry.service_title }}</h4>
+                    <h4 class="text-body fst-italic mb-2">Author: {{ entry.service_title }}</h4>
+                    <p class="text-body mb-4">{{ entry.postDate | date('M d, Y')}}</p>
                 </div>
             </div>
         </div>
