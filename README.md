@@ -1,4 +1,5 @@
 # stedwardhospital_website
+- website_url = stedwardhospitalgh.org
 
 ## PHP DEPENDENCIES
     * BCMath
@@ -38,6 +39,6 @@
 ## SETUP
     * add "->cpTrigger('<name>')" to config/general.php file
 
-## credebtials
+## credentials
 * username: stedward
 * password: stedward@2023
