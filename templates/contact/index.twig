@@ -62,11 +62,14 @@
 
                     {% set submission = submission ?? null %}
                     <form method="post" action="" accept-charset="UTF-8">
+                        {{ craft.contactFormExtensions.recaptcha | raw }}
                         {{ csrfInput() }}
                         {{ actionInput('contact-form/send') }}
                         {{ redirectInput('contact/thanks') }}
 
-                        <input type="hidden" name="toEmail" value="{{ getInfo.sendToEmail | hash }}">
+                        <input type="hidden" name="message[contactForm]" value="myContactForm">
+{#                        <input type="hidden" name="toEmail" value="{{ getInfo.sendToEmail | hash }}">#}
+                        <input type="hidden" name="message[toEmail]" value="{{ getInfo.sendToEmail|hash }}">
                         <div class="row g-3">
                             <div class="col-12">
                                 {{ input('text', 'fromName', submission.fromName ?? '', {

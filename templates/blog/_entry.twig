@@ -15,7 +15,10 @@
     </div>
 
     <!-- Carousel Start -->
-    {% include "component/slider" %}
+    {% include "component/slider" with {
+        photo: entry.photos.one(),
+        photos: entry.photos.all()|slice(1, entry.photos|length)
+    } %}
     <!-- Carousel End -->
 
     <div class="container-fluid py-4 wow fadeInUp" data-wow-delay="0.1s">

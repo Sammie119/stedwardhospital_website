@@ -1,4 +1,4 @@
-dateModified: 1682698447
+dateModified: 1682913564
 email:
   fromEmail: duah@tacmail.org
   fromName: 'St. Edward Hospital, Dwinyama'
@@ -102,6 +102,29 @@ plugins:
       prependSubject: 'New message from St. Edward Hospital Contact form'
       successFlashMessage: 'Your message has been sent.'
       toEmail: sammav2018@gmail.com
+  contact-form-extensions:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      confirmationSubject: ''
+      confirmationTemplate: ''
+      enableConfirmationEmail: ''
+      enableDatabase: '1'
+      enableRecaptchaOverride: ''
+      enableTemplateOverwrite: ''
+      notificationTemplate: ''
+      recaptcha: ''
+      recaptchaDataBadge: bottomright
+      recaptchaDebug: ''
+      recaptchaHideBadge: ''
+      recaptchaSecretKey: $MY_SECRET_KEY_reCAPTCHA
+      recaptchaSiteKey: $MY_SITE_KEY_reCAPTCHA
+      recaptchaThreshold: '0.5'
+      recaptchaTimeout: '5'
+      recaptchaUrl: ''
+      recaptchaVerificationUrl: ''
+      recaptchaVersion: '3'
   redactor:
     edition: standard
     enabled: true
