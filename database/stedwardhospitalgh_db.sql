@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 01, 2023 at 08:49 PM
+-- Generation Time: May 02, 2023 at 04:45 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -222,6 +222,7 @@ CREATE TABLE `changedattributes` (
 --
 
 INSERT INTO `changedattributes` (`elementId`, `siteId`, `attribute`, `dateUpdated`, `propagated`, `userId`) VALUES
+                                                                                                                (1, 1, 'fullName', '2023-05-02 01:26:02', 0, 1),
                                                                                                                 (7, 1, 'postDate', '2023-03-19 19:29:21', 0, 1),
                                                                                                                 (7, 1, 'slug', '2023-03-19 19:28:24', 0, 1),
                                                                                                                 (7, 1, 'title', '2023-04-24 19:02:08', 0, 1),
@@ -538,7 +539,7 @@ CREATE TABLE `content` (
 --
 
 INSERT INTO `content` (`id`, `elementId`, `siteId`, `title`, `dateCreated`, `dateUpdated`, `uid`, `field_carousel_1_Text_rmsxoipx`, `field_carousel_2_Text_pndpqtkn`, `field_carousel_1_Title_dzizeauc`, `field_carousel_2_Title_lusxbtau`, `field_service_title_oeigaqai`, `field_staffSectionTitle_salidnds`, `field_richText_qkolfbfq`, `field_shortDescription_aytyzkuo`, `field_pageTitle_rzxybgmc`, `field_location_yisxdfsp`, `field_emailAddress_vnaegkea`, `field_telNumber_zioftqcr`, `field_facebookAddress_tmwxichd`, `field_twitterAddress_aphyyapv`, `field_instagramAddress_kmgkoxnb`, `field_sendToEmail_bjofpuni`) VALUES
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (1, 1, 1, NULL, '2023-03-19 04:02:55', '2023-03-19 04:02:55', 'b1eddb94-6819-4fdb-bf0c-af1a4e1bf2c7', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (1, 1, 1, NULL, '2023-03-19 04:02:55', '2023-05-02 01:26:02', 'b1eddb94-6819-4fdb-bf0c-af1a4e1bf2c7', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (2, 2, 1, 'Home Page', '2023-03-19 19:11:29', '2023-05-01 14:30:43', '5517c57a-b17d-4e04-9c11-e9bd283d04bc', 'God is good All the time', 'All things working together for our good', 'Vision Statement', 'Mission Statement', 'We Offer The Best Quality Dental Services - SMS', 'We Offer The Best Quality Dental SAMMIE', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (3, 3, 1, 'Home Page', '2023-03-19 19:11:29', '2023-03-19 19:11:29', 'b8dc8086-c9a4-41d0-b8a3-44b6e8e4e0a6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (4, 4, 1, 'Home Page', '2023-03-19 19:11:29', '2023-03-19 19:11:29', '6b09f178-9c25-4b3c-8923-c5b5275697b6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -778,7 +779,7 @@ CREATE TABLE `elements` (
 --
 
 INSERT INTO `elements` (`id`, `canonicalId`, `draftId`, `revisionId`, `fieldLayoutId`, `type`, `enabled`, `archived`, `dateCreated`, `dateUpdated`, `dateLastMerged`, `dateDeleted`, `uid`) VALUES
-                                                                                                                                                                                                (1, NULL, NULL, NULL, NULL, 'craft\\elements\\User', 1, 0, '2023-03-19 04:02:55', '2023-03-19 04:02:55', NULL, NULL, '01c8ddff-237d-43ae-8324-c6eb9b327041'),
+                                                                                                                                                                                                (1, NULL, NULL, NULL, NULL, 'craft\\elements\\User', 1, 0, '2023-03-19 04:02:55', '2023-05-02 01:26:02', NULL, NULL, '01c8ddff-237d-43ae-8324-c6eb9b327041'),
                                                                                                                                                                                                 (2, NULL, NULL, NULL, 1, 'craft\\elements\\Entry', 1, 0, '2023-03-19 19:11:29', '2023-05-01 14:30:43', NULL, NULL, 'c5f092f5-f48b-461f-a269-7cd029a32fe8'),
                                                                                                                                                                                                 (3, 2, NULL, 1, 1, 'craft\\elements\\Entry', 1, 0, '2023-03-19 19:11:29', '2023-03-19 19:11:29', NULL, NULL, '95fb5c17-8218-496f-bcf3-bc098d5e3576'),
                                                                                                                                                                                                 (4, 2, NULL, 2, 1, 'craft\\elements\\Entry', 1, 0, '2023-03-19 19:11:29', '2023-03-19 19:11:29', NULL, NULL, 'aae3d249-3a21-4cc6-bb04-027a4acf0da0'),
@@ -2797,7 +2798,12 @@ INSERT INTO `imagetransformindex` (`id`, `assetId`, `transformer`, `filename`, `
                                                                                                                                                                                                          (26, 407, 'craft\\imagetransforms\\ImageTransformer', 'about.jpg', NULL, '_240x240_crop_center-center_none', 1, 0, 0, '2023-05-01 14:25:45', '2023-05-01 14:25:45', '2023-05-01 14:25:45', '1c5a39cc-f95f-4e0a-b446-9e732e0139e5'),
                                                                                                                                                                                                          (27, 435, 'craft\\imagetransforms\\ImageTransformer', 'about_2023-04-24-134713_ugsi.jpg', NULL, '_120x120_crop_center-center_none', 1, 0, 0, '2023-05-01 14:25:45', '2023-05-01 14:25:45', '2023-05-01 14:25:45', 'e65b2eca-ab12-46be-9c02-9a5bfe211769'),
                                                                                                                                                                                                          (28, 435, 'craft\\imagetransforms\\ImageTransformer', 'about_2023-04-24-134713_ugsi.jpg', NULL, '_240x240_crop_center-center_none', 1, 0, 0, '2023-05-01 14:25:45', '2023-05-01 14:25:45', '2023-05-01 14:25:45', 'f05dcb65-957a-4c4f-81d1-59a1a3854eaf'),
-                                                                                                                                                                                                         (29, 32, 'craft\\imagetransforms\\ImageTransformer', 'carousel-2_2023-04-24-023147_ofja.jpg', NULL, '_transformationForHomeAboutImage', 1, 0, 0, '2023-05-01 17:19:32', '2023-05-01 17:19:32', '2023-05-01 17:19:32', '334670cf-8816-41a8-b131-97c3fff185bb');
+                                                                                                                                                                                                         (29, 32, 'craft\\imagetransforms\\ImageTransformer', 'carousel-2_2023-04-24-023147_ofja.jpg', NULL, '_transformationForHomeAboutImage', 1, 0, 0, '2023-05-01 17:19:32', '2023-05-01 17:19:32', '2023-05-01 17:19:32', '334670cf-8816-41a8-b131-97c3fff185bb'),
+                                                                                                                                                                                                         (50, 31, 'craft\\imagetransforms\\ImageTransformer', 'carousel-1_2023-04-24-023146_syer.jpg', NULL, '_transformationForHomeServiceImage', 1, 0, 0, '2023-05-01 21:15:32', '2023-05-01 21:15:32', '2023-05-01 21:15:33', 'b76e493b-db02-4368-b769-085ce2272dd0'),
+                                                                                                                                                                                                         (59, 407, 'craft\\imagetransforms\\ImageTransformer', 'about.jpg', NULL, '_imageSlider', 1, 0, 0, '2023-05-01 21:23:54', '2023-05-01 21:23:54', '2023-05-01 21:23:54', 'e17f6d51-f878-482c-b0f6-5f5e0ddc0f4a'),
+                                                                                                                                                                                                         (60, 32, 'craft\\imagetransforms\\ImageTransformer', 'carousel-2_2023-04-24-023147_ofja.jpg', NULL, '_imageSlider', 1, 0, 0, '2023-05-01 21:23:54', '2023-05-01 21:23:54', '2023-05-01 21:23:54', '52c4d903-bbb3-4d85-914a-5ee4aeea6a5e'),
+                                                                                                                                                                                                         (61, 435, 'craft\\imagetransforms\\ImageTransformer', 'about_2023-04-24-134713_ugsi.jpg', NULL, '_imageSlider', 1, 0, 0, '2023-05-01 21:23:54', '2023-05-01 21:23:54', '2023-05-01 21:23:54', 'f82d3591-c75e-489e-9519-05dca3ff2d25'),
+                                                                                                                                                                                                         (62, 31, 'craft\\imagetransforms\\ImageTransformer', 'carousel-1_2023-04-24-023146_syer.jpg', NULL, '_imageSlider', 1, 0, 0, '2023-05-01 21:23:54', '2023-05-01 21:23:54', '2023-05-01 21:23:54', '11c0cffc-ff5e-4997-82a4-a6593b908477');
 
 -- --------------------------------------------------------
 
@@ -2832,7 +2838,8 @@ INSERT INTO `imagetransforms` (`id`, `name`, `handle`, `mode`, `position`, `widt
                                                                                                                                                                                                                    (1, 'transformation for home service image', 'transformationForHomeServiceImage', 'crop', 'center-center', 500, 300, NULL, NULL, 'none', NULL, 1, '2023-04-24 17:02:10', '2023-04-24 16:47:07', '2023-04-24 17:02:10', '31f0372e-1bf6-4316-8cdf-26169b6ce79f'),
                                                                                                                                                                                                                    (2, 'transformation for home about image', 'transformationForHomeAboutImage', 'crop', 'center-center', 600, 600, NULL, NULL, 'none', NULL, 1, '2023-04-24 17:12:50', '2023-04-24 17:12:50', '2023-04-24 17:12:50', '4bd41aa9-ea55-4791-9022-11112dc4e7e6'),
                                                                                                                                                                                                                    (3, 'Home Carousel', 'homeCarousel', 'fit', 'center-center', 1920, 1080, NULL, NULL, 'none', NULL, 1, '2023-04-24 17:15:07', '2023-04-24 17:15:07', '2023-04-24 17:15:07', 'aa6970d9-9575-48e3-8ee8-1275d7d6d56d'),
-                                                                                                                                                                                                                   (4, 'Staff Image', 'staffImage', 'crop', 'center-center', 500, 450, NULL, NULL, 'none', NULL, 1, '2023-04-24 17:17:37', '2023-04-24 17:17:37', '2023-04-24 17:17:37', '6fbbd23b-23a1-4c3c-bc98-ca4a0b1c559b');
+                                                                                                                                                                                                                   (4, 'Staff Image', 'staffImage', 'crop', 'center-center', 500, 450, NULL, NULL, 'none', NULL, 1, '2023-04-24 17:17:37', '2023-04-24 17:17:37', '2023-04-24 17:17:37', '6fbbd23b-23a1-4c3c-bc98-ca4a0b1c559b'),
+                                                                                                                                                                                                                   (6, 'Image Slider', 'imageSlider', 'crop', 'center-center', 768, 428, NULL, NULL, 'none', NULL, 1, '2023-05-01 21:21:35', '2023-05-01 21:04:13', '2023-05-01 21:21:35', 'fc6a21b5-136b-4e90-a239-737dbcb0ceaf');
 
 -- --------------------------------------------------------
 
@@ -2857,7 +2864,7 @@ CREATE TABLE `info` (
 --
 
 INSERT INTO `info` (`id`, `version`, `schemaVersion`, `maintenance`, `configVersion`, `fieldVersion`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-    (1, '4.4.8', '4.4.0.4', 0, 'ydlyadsptmqn', '3@rxcngpxera', '2023-03-19 04:02:55', '2023-05-01 17:03:48', 'a6cef40c-0e64-4d70-92a9-0eb253157530');
+    (1, '4.4.8', '4.4.0.4', 0, 'dozgcxqvdesh', '3@rxcngpxera', '2023-03-19 04:02:55', '2023-05-01 21:21:35', 'a6cef40c-0e64-4d70-92a9-0eb253157530');
 
 -- --------------------------------------------------------
 
@@ -3968,7 +3975,7 @@ CREATE TABLE `projectconfig` (
 --
 
 INSERT INTO `projectconfig` (`path`, `value`) VALUES
-                                                  ('dateModified', '1682960628'),
+                                                  ('dateModified', '1682976095'),
                                                   ('email.fromEmail', '\"duah@tacmail.org\"'),
                                                   ('email.fromName', '\"St. Edward Hospital, Dwinyama\"'),
                                                   ('email.replyToEmail', '\"duah@tacmail.org\"'),
@@ -5223,6 +5230,17 @@ INSERT INTO `projectconfig` (`path`, `value`) VALUES
                                                   ('imageTransforms.aa6970d9-9575-48e3-8ee8-1275d7d6d56d.quality', 'null'),
                                                   ('imageTransforms.aa6970d9-9575-48e3-8ee8-1275d7d6d56d.upscale', 'true'),
                                                   ('imageTransforms.aa6970d9-9575-48e3-8ee8-1275d7d6d56d.width', '1920'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.fill', 'null'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.format', 'null'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.handle', '\"imageSlider\"'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.height', '428'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.interlace', '\"none\"'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.mode', '\"crop\"'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.name', '\"Image Slider\"'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.position', '\"center-center\"'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.quality', 'null'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.upscale', 'true'),
+                                                  ('imageTransforms.fc6a21b5-136b-4e90-a239-737dbcb0ceaf.width', '768'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.field', '\"ad7d9367-8f02-4bc5-a8fb-ddd20066226a\"'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fieldLayouts.d35cb240-0478-4d04-b71b-989335ed897e.tabs.0.elementCondition', 'null'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fieldLayouts.d35cb240-0478-4d04-b71b-989335ed897e.tabs.0.elements.0.elementCondition', 'null'),
@@ -5282,14 +5300,14 @@ INSERT INTO `projectconfig` (`path`, `value`) VALUES
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.settings.removeNbsp', 'false'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.settings.showHtmlButtonForNonAdmins', 'true'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.settings.showUnpermittedFiles', 'false'),
-                                                  ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.settings.showUnpermittedVolumes', 'false'),
+                                                  ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.settings.showUnpermittedVolumes', 'false');
+INSERT INTO `projectconfig` (`path`, `value`) VALUES
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.settings.uiMode', '\"enlarged\"'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.translationKeyFormat', 'null'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.translationMethod', '\"none\"'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.2e187a4a-55e8-4f94-b493-c2830ee0b14e.type', '\"craft\\\\redactor\\\\Field\"'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.66539576-e552-409c-8b6a-e9f92817cb98.columnSuffix', '\"tbkuklnl\"'),
-                                                  ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.66539576-e552-409c-8b6a-e9f92817cb98.contentColumnType', '\"text\"');
-INSERT INTO `projectconfig` (`path`, `value`) VALUES
+                                                  ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.66539576-e552-409c-8b6a-e9f92817cb98.contentColumnType', '\"text\"'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.66539576-e552-409c-8b6a-e9f92817cb98.fieldGroup', 'null'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.66539576-e552-409c-8b6a-e9f92817cb98.handle', '\"bannertitle\"'),
                                                   ('matrixBlockTypes.37953704-984c-4070-a32f-563a57cec8c8.fields.66539576-e552-409c-8b6a-e9f92817cb98.instructions', 'null'),
@@ -5642,12 +5660,12 @@ INSERT INTO `projectconfig` (`path`, `value`) VALUES
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.restrictedLocationSubpath', 'null'),
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.restrictFiles', 'true'),
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.restrictLocation', 'false'),
-                                                  ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.0.0', '\"elementType\"'),
+                                                  ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.0.0', '\"elementType\"');
+INSERT INTO `projectconfig` (`path`, `value`) VALUES
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.0.1', '\"craft\\\\elements\\\\Asset\"'),
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.1.0', '\"fieldContext\"'),
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.1.1', '\"global\"'),
-                                                  ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.2.0', '\"class\"');
-INSERT INTO `projectconfig` (`path`, `value`) VALUES
+                                                  ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.2.0', '\"class\"'),
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionCondition.__assoc__.2.1', '\"craft\\\\elements\\\\conditions\\\\assets\\\\AssetCondition\"'),
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.selectionLabel', 'null'),
                                                   ('matrixBlockTypes.ce5aed38-d46c-42b2-bc7f-b9a7aa949009.fields.46716d8d-3949-49bf-91f2-9143de750edf.settings.showSiteMenu', 'true'),
@@ -5897,6 +5915,7 @@ INSERT INTO `projectconfig` (`path`, `value`) VALUES
                                                   ('meta.__names__.ed16eca0-b883-4ac5-9366-1e11c0b78107', '\"Blog Listing\"'),
                                                   ('meta.__names__.f442bcb1-5a3c-47d8-9755-5ead358fde02', '\"Link Text\"'),
                                                   ('meta.__names__.fad83b92-0189-4ac0-a504-b5d4abbb8aa0', '\"Staff Twitter Handle\"'),
+                                                  ('meta.__names__.fc6a21b5-136b-4e90-a239-737dbcb0ceaf', '\"Image Slider\"'),
                                                   ('plugins.contact-form-extensions.edition', '\"standard\"'),
                                                   ('plugins.contact-form-extensions.enabled', 'true'),
                                                   ('plugins.contact-form-extensions.schemaVersion', '\"1.0.1\"'),
@@ -6463,7 +6482,9 @@ INSERT INTO `resourcepaths` (`hash`, `path`) VALUES
                                                  ('32db49c', '@craft/web/assets/picturefill/dist'),
                                                  ('354269e2', '@craft/web/assets/assetindexes/dist'),
                                                  ('35e4e31c', '@craft/web/assets/feed/dist'),
+                                                 ('35eb00a7', '@craft/web/assets/edittransform/dist'),
                                                  ('35fd2364', '@craft/web/assets/clearcaches/dist'),
+                                                 ('36b22b2f', '@yii/debug/assets'),
                                                  ('379f52f5', '@craft/web/assets/selectize/dist'),
                                                  ('388eca7e', '@craft/web/assets/fileupload/dist'),
                                                  ('3a203de7', '@craft/web/assets/htmx/dist'),
@@ -6479,6 +6500,7 @@ INSERT INTO `resourcepaths` (`hash`, `path`) VALUES
                                                  ('4f3b9711', '@craft/web/assets/craftsupport/dist'),
                                                  ('536d26bb', '@craft/web/assets/matrixsettings/dist'),
                                                  ('5713135d', '@craft/web/assets/assetindexes/dist'),
+                                                 ('57a0c6a4', '@craft/web/assets/edituser/dist'),
                                                  ('57ac59db', '@craft/web/assets/clearcaches/dist'),
                                                  ('57b599a3', '@craft/web/assets/feed/dist'),
                                                  ('57ba7a18', '@craft/web/assets/edittransform/dist'),
@@ -6563,6 +6585,7 @@ INSERT INTO `resourcepaths` (`hash`, `path`) VALUES
                                                  ('e94385d9', '@craft/web/assets/axios/dist'),
                                                  ('ea32332a', '@craft/web/assets/queuemanager/dist'),
                                                  ('edd1c90a', '@craft/web/assets/utilities/dist'),
+                                                 ('eefbf506', '@vendor/yiisoft/yii2/assets'),
                                                  ('efcb54e1', '@craft/web/assets/jqueryui/dist'),
                                                  ('f1b0824a', '@craft/web/assets/fileupload/dist'),
                                                  ('f1b61080', '@craft/web/assets/recententries/dist'),
@@ -7142,7 +7165,9 @@ INSERT INTO `sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdated`, `
                                                                                           (63, 1, 'SUSG3cwk9x9cbKy4HiTFh0_Xf6XKc7m7YZlDOEL3LEI4HC88h2oxTdEfe4jX8XsbObL7IfYTBzlr0VWb8-JXaKqbH4NJ3qcRdagk', '2023-04-30 04:27:50', '2023-04-30 17:09:22', '281ec103-b883-4460-9ebd-624669dab88e'),
                                                                                           (64, 1, 'z5QtbNar7MKWISzMigsBDDYmObZ3JIkRjkuUyWOVrox8VOrujJ3ktL9a6HGJtvN8X0yDnS4aCwpUGBRizLqoB5UdJOhdiqz3HCcs', '2023-04-30 17:09:22', '2023-05-01 02:39:42', '6192a5fd-ce24-44aa-bea2-f7904ee0736c'),
                                                                                           (65, 1, 'A2wxnBICiYXtkwknyYrW7Smy97PfcgpmKjBZqT67aFEO4dTxlNesh9gP4J8OIOyo1mQcbn2bgtKC2ONEJUQLfdmh8n-SIzl5ODBN', '2023-05-01 02:39:42', '2023-05-01 14:02:56', '6ab5db72-449f-46b0-8b3d-c7032578775b'),
-                                                                                          (66, 1, '3zC5LtmJDZt1OPhhfyMO7A2BcjJ_XLWO0Owg6DdknQUnl1ceXKXR3i-cpwHBOCxnYqHNnxlSd09iHSIOJi6Wg7ckY5qF2MxzZ7oa', '2023-05-01 14:02:56', '2023-05-01 18:49:15', 'a045779e-ad61-44d9-b480-4ca3f557b1d8');
+                                                                                          (66, 1, '3zC5LtmJDZt1OPhhfyMO7A2BcjJ_XLWO0Owg6DdknQUnl1ceXKXR3i-cpwHBOCxnYqHNnxlSd09iHSIOJi6Wg7ckY5qF2MxzZ7oa', '2023-05-01 14:02:56', '2023-05-01 20:53:28', 'a045779e-ad61-44d9-b480-4ca3f557b1d8'),
+                                                                                          (67, 1, 'TW9Oxah6CxrSGziSKHKoz2imbJUZwNqIQLRi3p9UBLGT5n7e8X4HgNh9jjQHJwhLW0wEeLqJ1I5Un7UVCuhZMvDcUqm39z19wCUe', '2023-05-01 20:53:28', '2023-05-01 21:21:35', '4eb54a59-7ffe-42d6-8735-194ac9adec3f'),
+                                                                                          (69, 1, 'EqcgPKuScoelHzG6SHH4FbRxLjMpDeDCjLO54lWX_QXWYcmFAhFUmmurJDWHew6zkj4cLbdbXi5JYOvZyxOaaQeYmQhC4LHqy9XZ', '2023-05-02 01:29:54', '2023-05-02 02:45:09', '00c4f2a8-2995-465d-b09f-10af126ce0ee');
 
 -- --------------------------------------------------------
 
@@ -7411,7 +7436,7 @@ CREATE TABLE `userpreferences` (
 --
 
 INSERT INTO `userpreferences` (`userId`, `preferences`) VALUES
-    (1, '{\"language\":\"en-US\"}');
+    (1, '{\"language\":\"en-US\",\"locale\":null,\"weekStartDay\":\"0\",\"alwaysShowFocusRings\":false,\"useShapes\":false,\"underlineLinks\":false,\"notificationDuration\":\"5000\",\"showFieldHandles\":false,\"enableDebugToolbarForSite\":true,\"enableDebugToolbarForCp\":false,\"showExceptionView\":false,\"profileTemplates\":false}');
 
 -- --------------------------------------------------------
 
@@ -7454,7 +7479,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `photoId`, `active`, `pending`, `locked`, `suspended`, `admin`, `username`, `fullName`, `firstName`, `lastName`, `email`, `password`, `lastLoginDate`, `lastLoginAttemptIp`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `hasDashboard`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`) VALUES
-    (1, NULL, 1, 0, 0, 0, 1, 'stedward', NULL, NULL, NULL, 'info@stewardhospitalgh.org', '$2y$13$NPefGntRxiQ/bWn5V3sNz.C6IrZN4uv1T0L1CGeMYRfvTBrP6dQ7O', '2023-05-01 14:02:56', NULL, NULL, NULL, '2023-04-24 02:23:59', NULL, 1, NULL, NULL, NULL, 0, '2023-03-19 04:02:56', '2023-03-19 04:02:56', '2023-05-01 14:02:56');
+    (1, NULL, 1, 0, 0, 0, 1, 'stedward', '', NULL, NULL, 'info@stewardhospitalgh.org', '$2y$13$NPefGntRxiQ/bWn5V3sNz.C6IrZN4uv1T0L1CGeMYRfvTBrP6dQ7O', '2023-05-02 01:29:54', NULL, NULL, NULL, '2023-04-24 02:23:59', NULL, 1, NULL, NULL, NULL, 0, '2023-03-19 04:02:56', '2023-03-19 04:02:56', '2023-05-02 01:29:54');
 
 -- --------------------------------------------------------
 
@@ -8258,13 +8283,13 @@ ALTER TABLE `gqltokens`
 -- AUTO_INCREMENT for table `imagetransformindex`
 --
 ALTER TABLE `imagetransformindex`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
 -- AUTO_INCREMENT for table `imagetransforms`
 --
 ALTER TABLE `imagetransforms`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `info`
@@ -8324,7 +8349,7 @@ ALTER TABLE `plugins`
 -- AUTO_INCREMENT for table `queue`
 --
 ALTER TABLE `queue`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1980;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1986;
 
 --
 -- AUTO_INCREMENT for table `relations`
@@ -8354,7 +8379,7 @@ ALTER TABLE `sections_sites`
 -- AUTO_INCREMENT for table `sessions`
 --
 ALTER TABLE `sessions`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT for table `shunnedmessages`
