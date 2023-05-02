@@ -1,4 +1,4 @@
-dateModified: 1682960628
+dateModified: 1682976095
 email:
   fromEmail: duah@tacmail.org
   fromName: 'St. Edward Hospital, Dwinyama'
@@ -94,6 +94,7 @@ meta:
     ed16eca0-b883-4ac5-9366-1e11c0b78107: 'Blog Listing' # Blog Listing
     f442bcb1-5a3c-47d8-9755-5ead358fde02: 'Link Text' # Link Text
     fad83b92-0189-4ac0-a504-b5d4abbb8aa0: 'Staff Twitter Handle' # Staff Twitter Handle
+    fc6a21b5-136b-4e90-a239-737dbcb0ceaf: 'Image Slider' # Image Slider
 plugins:
   contact-form:
     edition: standard

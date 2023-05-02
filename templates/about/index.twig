@@ -1,6 +1,10 @@
 {% extends "_layout/app" %}
 
+{% set pageTitle = entry.title %}
+
 {% block content %}
+
+    {% cache using key "about-us" %}
 
     <!-- Hero Start -->
     {% set photo = entry.carousel_2.one() %}
@@ -31,5 +35,6 @@
     </div>
     <!-- About End -->
 
+    {% endcache %}
 
 {% endblock %}

@@ -1,6 +1,10 @@
 {% extends "_layout/app" %}
 
+{% set pageTitle = entry.title %}
+
 {% block content %}
+
+    {% cache using key "contact-us" %}
 
     <!-- Hero Start -->
     {% set bgimage = entry.carousel_1.one() %}
@@ -127,5 +131,7 @@
         </div>
     </div>
     <!-- Contact End -->
+
+    {% endcache %}
 
 {% endblock %}

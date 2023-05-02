@@ -1,6 +1,11 @@
 {% extends "_layout/app" %}
 
+{% set pageTitle = entry.title %}
+
 {% block content %}
+
+    {% cache using key "our-services" %}
+
     {% set services = craft.entries.section('services').all() %}
     {% set bgimage = entry.carousel_1.one() %}
     <!-- Hero Start -->
@@ -42,5 +47,7 @@
         </div>
     </div>
     <!-- Service End -->
+
+    {% endcache %}
 
 {% endblock %}
