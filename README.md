@@ -39,6 +39,3 @@
 ## SETUP
     * add "->cpTrigger('<name>')" to config/general.php file
 
-## credentials
-* username: stedward
-* password: stedward@2023
